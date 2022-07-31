@@ -7,8 +7,9 @@ public class Task9 {
             array[i] =(int) (Math.random() * 50);
         }
         for (int i = 0; i < array.length; i++){
-            System.out.println(array[i] + " ");
+            System.out.print(array[i] + " ");
         }
+        System.out.println();
         System.out.println();
         int[] srtarray = array;
         for (int i = 0; i<array.length; i++) {
