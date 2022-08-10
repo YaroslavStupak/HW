@@ -11,7 +11,7 @@ public class Task7 {
             System.out.print(array[i] + " ");
         }
         System.out.println();
-        for (int i = 1; i < array.length; i++) {
+        for (int i = 1; i < array.length - 1; i++) {
             sum = sum + array[i];
         }
         System.out.println(sum);

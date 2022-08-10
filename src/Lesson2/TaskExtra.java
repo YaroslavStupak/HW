@@ -15,12 +15,8 @@ public class TaskExtra {
         int max2 = 0;
         for (int i = 0; i < array.length; i++) {
             if (max1 < array[i]) {
+                max2 = max1;
                 max1 = array[i];
-            }
-        }
-        for (int i = 0; i < array.length; i++) {
-            if (max2 < array[i] && array [i] < max1) {
-                max2 = array[i];
             }
         }
         System.out.println("Два найбільших числа списку " + max2 + " та " + max1);
