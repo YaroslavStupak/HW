@@ -13,7 +13,7 @@ public class Task9 {
         System.out.println();
         int[] srtarray = array;
         for (int i = 0; i<array.length; i++) {
-            for(int j = 0; j<array.length-1; j++) {
+            for(int j = 0; j<array.length; j++) {
                 int a = srtarray[j];
                 int b = srtarray[i];
                 if (b < a) {
