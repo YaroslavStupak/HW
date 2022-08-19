@@ -5,10 +5,8 @@ public class Task1 {
         String string = "Hello World!";
         if (string.length() >= 2) {
             System.out.println(string.charAt(0) + "" + string.charAt(1));
-        } else if (string.length() >= 1) {
-            System.out.println(string.charAt(0));
-        } else {
-            System.out.println(" ");
+        } else  {
+            System.out.println(string);
         }
     }
 }
