@@ -8,6 +8,6 @@ Now try to create objects of your classes without specifying the packages in fro
 import Lesson5.Task1.First.Task1;
 
 public class Task2 {
-    Task1 a = new Task1;
-    Task1 b = new Task1;
+    Task1 a = new Task1();
+    Task1 b = new Task1();
 }

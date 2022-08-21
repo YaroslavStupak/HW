@@ -16,11 +16,7 @@ public class Boxer {
     }
 
     public boolean fight(Boxer anotherBoxer) {
-        if (weight + strength - age > anotherBoxer.weight + anotherBoxer.strength - anotherBoxer.age){
-            return true;
-        } else {
-            return false;
-        }
+        return (weight + strength - age > anotherBoxer.weight + anotherBoxer.strength - anotherBoxer.age);
     }
 
     public static void main(String[] args) {

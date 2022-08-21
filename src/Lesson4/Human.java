@@ -23,7 +23,7 @@ public class Human {
     }
 
     public static void main(String[] args) {
-        Human Bob = new Human("Bob", "Smith", 80, 35, 183);
-        System.out.println(Bob.toString());
+        Human bob = new Human("Bob", "Smith", 80, 35, 183);
+        System.out.println(bob.toString());
     }
 }
