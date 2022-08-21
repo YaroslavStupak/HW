@@ -24,20 +24,19 @@ public class StaticCalculator {
 
     public Serializable calculate() {
         int i = operation.charAt(0);
-        if  (i == 43) {
-            return firstValue + secondValue;
-        } else if (i == 42) {
-            return firstValue * secondValue;
-        } else if (i == 45) {
-            return firstValue - secondValue;
-        } else if (i == 47) {
-            return firstValue / secondValue;
-        } else if (i == 37) {
-            return firstValue % secondValue;
-        } else {
-            return "Incorrect operation value";
+        switch (i){
+            case 43:
+                return firstValue + secondValue;
+            case 42:
+                return firstValue * secondValue;
+            case 45:
+                return firstValue - secondValue;
+            case 47:
+                return firstValue / secondValue;
+            case 37:
+                return firstValue % secondValue;
+            default:
+                return "Incorrect operation value";
         }
-
     }
-
 }

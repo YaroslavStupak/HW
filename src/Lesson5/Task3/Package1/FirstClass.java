@@ -1,0 +1,36 @@
+package Lesson5.Task3.Package1;
+
+/*
+Answer the question: What is a package-private access? Create a simple program to demonstrate the package-private access.
+Tips:
+ - Create two different packages
+ - Create 3 classes. 2 classes should be in the first package, 3rd class - in the second package.
+ - Create in one of the classes some package-private members(fields or methods).
+ - In another two classes create objects of the class with package-private members and try to access its members.
+ */
+
+public class FirstClass {
+    public String firstName;
+    public String lastName;
+    public int weight;
+    public int age;
+    public int height;
+
+    protected FirstClass(String firstName, String lastName, int weight, int age, int height) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.weight = weight;
+        this.age = age;
+        this.height = height;
+    }
+
+    protected int test() {
+        return weight+age+height;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(firstName + " " + lastName + " is " + age + " years old, his weight is " + weight + " kg and his height is " + height + " cm");
+    }
+
+}
